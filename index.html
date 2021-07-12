@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg) #1FA7B2;
+            background-position: -80% 60%, 190% -30%;
+            background-repeat: no-repeat, no-repeat;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        main {
+            z-index: 1;
+            min-width: 600px;
+        }
+        
+        .card {
+            background: #DFDFDD;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 350px;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            border-radius: 25px;
+            overflow: hidden;
+        }
+        
+        .avatar {
+            width: 100px;
+            height: 100%;
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        .avatar img {
+            display: block;
+            border-radius: 100%;
+            position: absolute;
+            bottom: -12rem;
+            border: 4px solid #DFDFDD;
+        }
+        
+        .section-2 {
+            background: #DFDFDD;
+            margin-top: 14%;
+        }
+        
+        .section-2 h2 {
+            text-align: center;
+            color: #39292C;
+            font-weight: 700;
+        }
+        
+        .section-2 p {
+            color: #69564C;
+            text-align: center;
+            padding: 0 0 25px 0;
+            font-weight: 450;
+        }
+        
+        .section-2 span {
+            color: #69564C;
+        }
+        
+        .section-2 ul {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+        
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            margin-top: 10px;
+            line-height: 20px;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <div class="avatar">
+                <img src="images/image-victor.jpg" alt="Profile-Picture">
+            </div>
+            <div class="sectiom-1">
+                <img src="images/bg-pattern-card.svg" alt="Card-BackgroungImage" class="bg-img">
+            </div>
+            <div class="section-2">
+                <h2>Victor Crests <span>26</span> </h2>
+                <p>London</p>
+                <hr/>
+                <ul>
+                    <li>
+                        <h2>80k</h2>
+                        <p>Followers</p>
+                    </li>
+                    <li>
+                        <h2>803k</h2>
+                        <p>Likes</p>
+                    </li>
+                    <li>
+                        <h2>1.4k</h2>
+                        <p>Photos</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://twitter.com/BhusanKhadka">Basanta Bhusan Khadka</a>.
+    </footer>
+</body>
+
+</html>
